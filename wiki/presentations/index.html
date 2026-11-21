@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="N3 入門教學簡報：理解 JLPT N3 的程度、單字與文法。">
+<title>N3 日語怎麼讀：單字、文法與句意</title>
+<style>
+:root{--ink:#f3f0e9;--muted:#b9b4ab;--blue:#d0c9bf;--cyan:#ff6b1a;--orange:#ff6b1a;--cream:#090909;--paper:#10100f;--line:#3b3834;--pale:#121211;--rose:#19120e;--green:#11110f;--display:"Noto Serif TC","Songti TC","PMingLiU",serif;--body:Inter,"Helvetica Neue","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;font-family:var(--body);color:var(--ink);background:#060606}body{display:grid;place-items:center;overflow:hidden}.deck{position:relative;width:min(100vw,177.78vh);height:min(56.25vw,100vh);background:var(--cream);box-shadow:0 20px 90px #000;overflow:hidden;border:1px solid #242220}.slide{position:absolute;inset:0;padding:6.4% 7.2% 7.2%;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateX(2.3%);transition:opacity .42s ease,transform .58s cubic-bezier(.2,.75,.25,1);overflow:hidden;background:linear-gradient(112deg,#090909 0%,#0b0b0a 72%,#0d0c0b 100%)}.slide.active{opacity:1;visibility:visible;transform:none}.slide:before{content:"";position:absolute;right:-16%;top:-42%;width:58%;aspect-ratio:1;border:1px solid #302a25;border-radius:50%;background:radial-gradient(circle at 48% 48%,#ff6b1a12 0 1%,transparent 1.5% 100%);z-index:0;transform-origin:50% 50%;animation:orbit 24s linear infinite}.slide:after{content:"";position:absolute;right:8.7%;top:0;width:1px;height:0;background:linear-gradient(180deg,transparent,#ff6b1a80,transparent);z-index:0;animation:drawRule 1.15s .15s ease-out forwards}.slide>*{position:relative;z-index:1}.eyebrow{font-size:clamp(11px,1vw,14px);letter-spacing:.2em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:1.35em}.title{font-family:var(--display);font-size:clamp(32px,4vw,58px);line-height:1.2;letter-spacing:.01em;margin:0 0 .5em;font-weight:600;max-width:92%;text-wrap:balance}.subtitle{font-size:clamp(16px,1.55vw,22px);line-height:1.65;color:var(--muted);max-width:80%;margin:0;font-weight:350}.lead{font-family:var(--display);font-size:clamp(20px,2.05vw,30px);line-height:1.55;font-weight:500;max-width:90%;margin:.2em 0 .8em}.grid{display:grid;gap:4.5%;flex:1;min-height:0}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.five{grid-template-columns:repeat(5,1fr)}.col{display:flex;flex-direction:column;gap:1.25em}.block{border-top:1px solid #49443e;padding:1em .15em 0;position:relative}.block:before{content:"";position:absolute;top:-1px;left:0;width:32px;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .55s ease .28s}.active .block:before{transform:scaleX(1)}.block.blue{border-color:#49443e}.block.orange{border-color:#49443e}.block h3{font-family:var(--display);font-size:clamp(17px,1.8vw,26px);margin:0 0 .5em;color:#f3f0e9;font-weight:600}.block p,.block li{font-size:clamp(13px,1.28vw,18px);line-height:1.7;color:#c4beb5;margin:.2em 0;font-weight:350}.block ul{padding-left:1.15em;margin:.35em 0}.tag{display:inline-block;border:1px solid #514940;padding:.25em .7em;font-size:clamp(11px,1vw,14px);color:#f0a174;background:transparent;margin:0 .3em .3em 0}.number{font-family:var(--display);font-size:clamp(40px,5vw,72px);line-height:1;font-weight:500;color:var(--orange);letter-spacing:-.04em}.callout{background:#11100f;border-left:2px solid var(--orange);padding:1em 1.2em;border-radius:0;font-size:clamp(14px,1.42vw,20px);line-height:1.65;color:#e1dcd4}.callout.warn{background:#15100d;border-color:var(--orange)}.diagram{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:2.2%;margin:1.2em 0}.node{min-height:150px;padding:1em .6em;background:transparent;border-bottom:1px solid #524a41;display:flex;flex-direction:column;justify-content:center;position:relative}.node:after{content:"";position:absolute;bottom:-2px;left:0;width:25%;height:2px;background:var(--orange)}.node:nth-of-type(3){border-color:#524a41}.node:nth-of-type(5){border-color:#524a41}.node b{font-family:var(--display);font-size:clamp(17px,1.7vw,24px);margin-bottom:.45em;font-weight:600}.node span{font-size:clamp(12px,1.12vw,16px);color:var(--muted);line-height:1.55}.arrow{font-family:var(--display);font-size:clamp(22px,2.4vw,34px);color:var(--orange);font-weight:400}.compare{display:grid;grid-template-columns:1fr 1fr;gap:6%;margin-top:.5em}.compare section{padding:1em .2em;background:transparent;border-top:1px solid #49443e;position:relative}.compare section:before{content:"";display:block;width:30px;height:2px;background:var(--orange);margin-top:-1.05em;margin-bottom:1.2em}.compare section:last-child{border-color:#49443e}.compare h3{font-family:var(--display);font-size:clamp(17px,1.8vw,25px);margin:0 0 .5em;font-weight:600}.compare p{font-size:clamp(13px,1.28vw,18px);line-height:1.65;margin:.3em 0;color:#c4beb5}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:2.5%;margin:1.4em 0}.step{padding:.85em .2em;background:transparent;border:0;border-top:1px solid #49443e;min-height:125px;position:relative}.step:before{content:"";position:absolute;top:-1px;left:0;width:24px;height:2px;background:var(--orange)}.step:not(:last-child):after{content:"→";position:absolute;right:-13%;top:38%;color:var(--orange);font-size:20px;font-weight:400}.step b{display:block;color:#f0a174;font-family:var(--display);font-size:clamp(14px,1.25vw,17px);margin-bottom:.55em;font-weight:600}.step p{font-size:clamp(11px,1.1vw,15px);line-height:1.6;margin:0;color:#c4beb5}.example{display:grid;grid-template-columns:.8fr 1.2fr;gap:5%;align-items:center;flex:1}.word{font-family:var(--display);font-size:clamp(38px,5vw,72px);font-weight:600;line-height:1.12;color:#f3f0e9}.reading{font-family:var(--display);font-size:clamp(17px,1.8vw,26px);color:#f0a174;margin-top:.5em}.meaning{font-size:clamp(16px,1.55vw,22px);color:var(--muted);margin-top:.3em}.answer{border-left:2px solid var(--orange);padding:.4em 0 .4em 1.2em;font-size:clamp(16px,1.6vw,23px);line-height:1.65;color:#e1dcd4}.fine{font-size:clamp(10px,.95vw,13px);color:#aaa39a;line-height:1.5}.source{position:absolute!important;left:7.2%;right:15%;bottom:3%;font-size:clamp(9px,.83vw,12px);color:#8f8981;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.015em}.source a{color:#e38a55;text-underline-offset:3px}.counter{position:absolute;right:7.2%;bottom:2.8%;font-family:var(--display);font-size:clamp(10px,.9vw,13px);color:var(--orange);font-variant-numeric:tabular-nums;letter-spacing:.08em}.cover{justify-content:center;background:#090909}.cover:before{width:62%;right:-18%;top:-18%;border-color:#3a2a20;background:radial-gradient(circle at 50% 50%,#ff6b1a18,transparent 63%);animation:orbit 32s linear infinite}.cover:after{left:7.2%;right:auto;top:auto;bottom:13%;width:0;height:1px;background:var(--orange);animation:drawHorizontal 1.1s .35s ease-out forwards}.cover .eyebrow{margin-bottom:1.8em}.cover .title{font-family:var(--display);font-size:clamp(46px,7vw,100px);max-width:84%;line-height:1.14;letter-spacing:.015em;font-weight:500}.cover .subtitle{max-width:68%}.meta{margin-top:2.5em;font-size:clamp(12px,1.05vw,15px);color:#a9a39a;letter-spacing:.04em}.close{background:linear-gradient(135deg,#090909,#100d0b)}.close .lead{font-family:var(--display);font-size:clamp(25px,3vw,43px);max-width:80%;margin:auto 0}.controls{position:fixed;bottom:14px;right:18px;display:flex;gap:8px;z-index:5}.controls button{border:1px solid #514940;background:#10100f;color:var(--ink);border-radius:50%;width:42px;height:42px;font-size:20px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}.controls button:hover{background:#ff6b1a;color:#080808;border-color:#ff6b1a}.progress{position:absolute;left:0;bottom:0;height:2px;background:var(--orange);transition:width .35s ease}
+.slide.active .eyebrow{animation:rise .55s both}.slide.active .title{animation:rise .72s .07s both}.slide.active .lead,.slide.active>.grid,.slide.active>.diagram,.slide.active>.compare,.slide.active>.example,.slide.active>.flow,.slide.active>.col,.slide.active>.callout{animation:rise .72s .18s both}.slide.active .block:nth-child(2){animation:rise .65s .26s both}.slide.active .block:nth-child(3){animation:rise .65s .37s both}.slide.active .block:nth-child(4){animation:rise .65s .46s both}.slide.active .block:nth-child(5){animation:rise .65s .55s both}.slide.active .step:nth-child(2){animation:rise .55s .12s both}.slide.active .step:nth-child(3){animation:rise .55s .2s both}.slide.active .step:nth-child(4){animation:rise .55s .28s both}.slide.active .step:nth-child(5){animation:rise .55s .36s both}.cover.active .title{animation:titleReveal .95s .12s both}.cover.active .subtitle{animation:rise .72s .42s both}.cover.active .meta{animation:rise .72s .58s both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes titleReveal{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(14px)}to{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes drawRule{to{height:76%}}@keyframes drawHorizontal{to{width:38%}}
+@media(max-width:700px){.slide{padding:6% 5% 12%;overflow-y:auto}.grid.three{grid-template-columns:1fr 1fr}.grid.five{grid-template-columns:1fr 1fr}.diagram{grid-template-columns:1fr;gap:5px}.arrow{transform:rotate(90deg);text-align:center}.node{min-height:auto;padding:.7em}.flow{grid-template-columns:1fr;gap:8px}.step{min-height:auto}.step:not(:last-child):after{content:"↓";right:1em;top:auto;bottom:-.8em;z-index:2}.source{left:5%;right:20%;bottom:2%}.counter{right:5%;bottom:1.8%}.example{grid-template-columns:1fr}.compare{gap:2%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+@media print{@page{size:13.333in 7.5in;margin:0}html,body{width:auto;height:auto;background:#090909;overflow:visible;display:block;-webkit-print-color-adjust:exact;print-color-adjust:exact}.deck{width:13.333in;height:auto;box-shadow:none;overflow:visible;border:0}.slide,.slide.active{position:relative;inset:auto;width:13.333in;height:7.5in;opacity:1;visibility:visible;transform:none;page-break-after:always;break-after:page;padding:.7in .92in .7in}.controls,.progress{display:none}.source{left:.92in;right:1.1in;bottom:.23in}.counter{right:.92in;bottom:.22in}}
+</style>
+</head>
+<body>
+<main class="deck" aria-label="N3 日語怎麼讀：單字、文法與句意">
+<section class="slide cover active" aria-label="封面">
+ <div class="eyebrow">日語學習入門｜JLPT N3</div><h1 class="title">N3 日語怎麼讀：<br>單字、文法與句意</h1>
+ <p class="subtitle">從讀音、接續到理解</p>
+ <p class="meta">以 JLPT 官方能力說明與題型、Wiki 單字材料為基礎</p>
+ <div class="source">Wiki 導讀：<a href="../reviews/N3-grammar-vocabulary-intro.md">N3 文法與詞彙入門總覽</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="N3程度">
+ <div class="eyebrow">01 / N3 是什麼程度？</div><h2 class="title">N3 是基礎日語走向日常理解的橋接級</h2>
+ <p class="lead">官方描述：能在一定程度上理解日常情境中的日語。</p>
+ <div class="grid three">
+  <div class="block blue"><div class="number">讀</div><h3>看日常文章</h3><p>讀懂日常主題的具體內容，抓到標題等摘要資訊。</p></div>
+  <div class="block"><div class="number">想</div><h3>理解稍難內容</h3><p>遇到稍有難度的日常文章時，可借助替代表達掌握重點。</p></div>
+  <div class="block orange"><div class="number">聽</div><h3>跟上日常對話</h3><p>理解接近自然速度的連貫對話，掌握內容和說話者關係。</p></div>
+ </div>
+ <div class="source">Wiki：<a href="../reviews/N3-grammar-vocabulary-intro.md">N3 入門總覽</a>｜官方：<a href="https://www.jlpt.jp/e/about/levelsummary.html">JLPT N1–N5 程度摘要</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="N3考試結構">
+ <div class="eyebrow">02 / N3 考什麼？</div><h2 class="title">單字與文法是語言知識，也要用在閱讀裡</h2>
+ <div class="diagram">
+  <div class="node"><b>文字・詞彙</b><span>30 分鐘<br>讀音、字形、詞義、用法</span></div><div class="arrow">＋</div>
+  <div class="node"><b>文法・閱讀</b><span>70 分鐘<br>句型、句子組成、文章理解</span></div><div class="arrow">＋</div>
+  <div class="node"><b>聽力</b><span>40 分鐘<br>抓任務、重點、概要與適當回應</span></div>
+ </div>
+ <p class="callout">學習重點：不是把單字和句型分開背完就結束；要能在句子和文章中辨認它們如何一起傳達意思。</p>
+ <div class="source">Wiki：<a href="../sources/JLPT-N3-basics.md">JLPT N3 題型來源紀錄</a>｜官方：<a href="https://samplequestions.jlpt.jp/e/guideline/pdf/n3_e.pdf">N3 題型與目的 PDF</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="N3詞彙學習面向">
+ <div class="eyebrow">03 / 單字不只背中文</div><h2 class="title">一個詞至少要會五件事</h2>
+ <div class="grid five">
+  <div class="block blue"><div class="number">1</div><h3>讀音</h3><p>漢字怎麼念？</p></div>
+  <div class="block"><div class="number">2</div><h3>字形</h3><p>假名對應哪個漢字？</p></div>
+  <div class="block orange"><div class="number">3</div><h3>語境</h3><p>在這句話裡是什麼意思？</p></div>
+  <div class="block blue"><div class="number">4</div><h3>近義</h3><p>哪個詞意思相近？</p></div>
+  <div class="block"><div class="number">5</div><h3>用法</h3><p>怎麼放進句子？</p></div>
+ </div>
+ <p class="callout" style="margin-top:1em">這五個方向對應官方 N3 詞彙題型：漢字讀音、表記、文脈規定、言い換え類義、用法。</p>
+ <div class="source">Wiki：<a href="../vocabulary/N3-vocabulary-basics.md">N3 詞彙入門</a>｜官方：<a href="https://samplequestions.jlpt.jp/e/guideline/pdf/n3_e.pdf">N3 題型與目的 PDF</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="詞彙例子">
+ <div class="eyebrow">04 / 詞彙例子</div><h2 class="title">從讀音、意思到搭配，做出能使用的詞彙卡</h2>
+ <div class="grid three">
+  <div class="block blue"><div class="word">給料</div><div class="reading">きゅうりょう</div><div class="meaning">薪水</div><p>搭配：給料をもらう<br>領薪水</p></div>
+  <div class="block"><div class="word">出張</div><div class="reading">しゅっちょう</div><div class="meaning">出差</div><p>例句：来週、大阪へ出張します。<br>下週要去大阪出差。</p></div>
+  <div class="block orange"><div class="word">残業</div><div class="reading">ざんぎょう</div><div class="meaning">加班</div><p>例句：昨日は二時間残業しました。<br>昨天加班了兩小時。</p></div>
+ </div>
+ <p class="fine" style="margin-top:.8em">單字與中文意思取自 wiki 收錄的試閱 PDF 第 1 頁；搭配與例句為 wiki 自編練習，不是原文。</p>
+ <div class="source">Wiki：<a href="../vocabulary/N3-vocabulary-basics.md">N3 詞彙入門</a>、<a href="../sources/N3-high-frequency-vocabulary.md">單字試閱摘要</a>｜<a href="../../sources/N3-high-frequency-vocabulary-sample.pdf">原始 PDF 第 1 頁</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="N3文法概念">
+ <div class="eyebrow">05 / 文法是什麼？</div><h2 class="title">文法讓詞語組成合適、通順的句子</h2>
+ <div class="grid three">
+  <div class="block blue"><div class="number">形</div><h3>怎麼接？</h3><p>名詞、動詞或形容詞後面要接什麼形式？</p></div>
+  <div class="block"><div class="number">義</div><h3>表示什麼？</h3><p>是原因、轉折、時間、角色，還是其他關係？</p></div>
+  <div class="block orange"><div class="number">用</div><h3>何時使用？</h3><p>在什麼情境、對誰說，這句話才自然合適？</p></div>
+ </div>
+ <p class="callout" style="margin-top:1em">官方 N3 文法題會考：依句意選形式、把詞語排列成文法與意思都正確的句子、判斷句子是否符合文章脈絡。</p>
+ <div class="source">Wiki：<a href="../grammar/N3-grammar-basics.md">N3 文法入門</a>｜日本國際交流基金：<a href="https://www.jpf.go.jp/j/project/japanese/teach/tsushin/bn/dw_pdfs/nk67.pdf">文法教學：形式、意思／功能與使用</a>｜<a href="https://samplequestions.jlpt.jp/e/guideline/pdf/n3_e.pdf">JLPT N3 題型說明</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="として文法示例">
+ <div class="eyebrow">06 / N3 文法例子：〜として</div><h2 class="title">名詞＋として：以某種身分或角色來看</h2>
+ <div class="example">
+  <div><div class="word">名詞</div><div class="reading">＋として</div><div class="meaning">以……的身分／作為……</div></div>
+  <div class="col"><div class="block blue"><h3>自編例句</h3><p style="font-size:clamp(22px,2.7vw,38px);font-weight:750">日本語の先生として働いています。</p><p>我以日語教師的身分工作。</p></div><div class="block orange"><h3>看句子的方法</h3><p>「先生」是角色；「として」把這個角色連到後面的工作狀態。</p></div></div>
+ </div>
+ <div class="source">Wiki：<a href="../grammar/N3-grammar-basics.md">N3 文法入門</a>｜詞義：<a href="https://www.kyozai.jpf.go.jp/kyozai/material/BMA00002/ja/render.do">日本國際交流基金「として」文法解說</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="文法題示範">
+ <div class="eyebrow">07 / 把句意與形式合起來</div><h2 class="title">先讀完整句，再判斷空格需要的關係</h2>
+ <div class="col" style="max-width:92%;margin:auto 0">
+  <p class="lead">彼は小説家（　　　）有名になった。</p>
+  <div class="answer"><b>答案：として</b><br>「小説家」是身分／角色；「として」表示「作為小說家」，連接角色與「有名になった」。</div>
+  <p class="fine">這是 JLPT 官方 N3 文法練習題的節錄；原題後面還有補充語境。此處只取短句作教學示例。</p>
+ </div>
+ <div class="source">Wiki：<a href="../grammar/N3-grammar-basics.md">N3 文法入門</a>｜官方例題：<a href="https://www.jlpt.jp/samples/sample2018/pdf/N3G.pdf">JLPT 2018 N3 文法／閱讀 PDF，第 1 頁第 1 題</a>｜答案：<a href="https://ns.jlpt.jp/samples/sample2018/pdf/N3answer.pdf">官方正答表</a></div><div class="counter"></div>
+</section>
+<section class="slide" aria-label="單字文法整合示例">
+ <div class="eyebrow">08 / 單字與文法一起理解</div><h2 class="title">看懂一句話：詞義提供內容，文法交代關係</h2>
+ <div class="col" style="max-width:92%;margin:auto 0">
+  <p class="lead">昨日は二時間残業しました。</p>
+  <div class="diagram" style="grid-template-columns:1fr auto 1fr auto 1fr">
+   <div class="node"><b>昨日は</b><span>時間：昨天</span></div><div class="arrow">＋</div>
+   <div class="node"><b>二時間</b><span>時長：兩小時</span></div><div class="arrow">＋</div>
+   <div class="node"><b>残業しました</b><span>詞彙：加班<br>文法：する的禮貌過去式</span></div>
+  </div>
+  <div class="callout">整句意思：昨天加班了兩小時。先認詞，再看時間與動詞形式，最後合成整句意思。例句為 wiki 自編。</div>
+ </div>
+ <div class="source">詞義依據：<a href="../vocabulary/N3-vocabulary-basics.md">N3 詞彙入門</a>｜活用教學例句：Wiki 自編</div><div class="counter"></div>
+</section>
+<section class="slide close" aria-label="學習路線">
+ <div class="eyebrow">09 / 新手學習路線</div><h2 class="title">先把單字認清，再用文法讀懂句子</h2>
+ <div class="flow">
+  <div class="step"><b>認讀音</b><p>看漢字，讀出假名</p></div><div class="step"><b>抓意思</b><p>依句子判斷詞義</p></div><div class="step"><b>看接續</b><p>確認文法形式</p></div><div class="step"><b>讀整句</b><p>說出前後關係</p></div><div class="step"><b>自己造句</b><p>在新情境中使用</p></div>
+ </div>
+ <div class="callout">Wiki 目前收錄的是單字試閱片段與官方題型資料，不是完整 N3 詞彙表或完整文法清單。學習時應搭配教材、課堂練習和更多官方題目。</div>
+ <div class="source">繼續閱讀：<a href="../reviews/N3-grammar-vocabulary-intro.md">N3 文法與詞彙入門總覽</a>｜來源：<a href="../sources/JLPT-N3-basics.md">JLPT N3 官方與 JPF 資料</a></div><div class="counter"></div>
+</section>
+<div class="progress" aria-hidden="true"></div>
+</main>
+<nav class="controls" aria-label="投影片控制"><button type="button" id="prev" aria-label="上一張">‹</button><button type="button" id="next" aria-label="下一張">›</button></nav>
+<script>
+(()=>{const slides=[...document.querySelectorAll('.slide')],bar=document.querySelector('.progress');let i=0;function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,j)=>{s.classList.toggle('active',j===i);s.setAttribute('aria-hidden',j===i?'false':'true');const c=s.querySelector('.counter');if(c)c.textContent=`${String(i+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`});bar.style.width=`${(i+1)/slides.length*100}%`;history.replaceState(null,'',`#${i+1}`)}function move(d){show(i+d)}document.querySelector('#prev').addEventListener('click',()=>move(-1));document.querySelector('#next').addEventListener('click',()=>move(1));window.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();move(1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();move(-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)});let touchX=null;document.addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{if(touchX===null)return;const dx=e.changedTouches[0].clientX-touchX;if(Math.abs(dx)>50)move(dx<0?1:-1);touchX=null},{passive:true});const h=Number(location.hash.slice(1));if(h>0)show(h-1);else show(0)})();
+</script>
+</body>
+</html>
